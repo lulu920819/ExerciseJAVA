@@ -31,14 +31,18 @@ public class Diamond {
 
     }
 
-    public  StringBuffer drawDiamond(int num){
+    public  StringBuffer drawDiamond(int num, boolean drawName){
         StringBuffer diamond = new StringBuffer();
         StringBuffer space = getSpaceLine(num);
         int totalLine = 2*num-1;
         for (int i = 0;i < totalLine;i++) {
-            diamond.append(replaceStar(space, i<num?i:totalLine-1-i));
+            if (drawName && i==num)
+                diamond.append("Lu Lu");
+            else
+                diamond.append(replaceStar(space, i<num?i:totalLine-1-i));
             diamond.append("\n");
         }
         return diamond;
     }
+
 }

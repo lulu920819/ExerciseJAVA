@@ -12,9 +12,11 @@ public class DiamondTest {
 
     @Test
     public void drawDiamond() throws Exception {
-        StringBuffer drawdiamond = diamond.drawDiamond(3);
-        assertEquals(drawdiamond.toString(),"  *  \n *** \n*****\n *** \n  *  \n");
+        StringBuffer drawdiamond_withoutname = diamond.drawDiamond(3, false);
+        assertEquals(drawdiamond_withoutname.toString(),"  *  \n *** \n*****\n *** \n  *  \n");
 
+        StringBuffer drawdiamond_withname = diamond.drawDiamond(3, true);
+        assertEquals(drawdiamond_withname.toString(),"  *  \n *** \n*****\nLu Lu\n  *  \n");
     }
     @Test
     public void getSpaceLine() throws Exception {
