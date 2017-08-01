@@ -1,9 +1,5 @@
-/****
- *
- *  Create by Lu Lu
- *  Date: ${Date}
- ****/
-public class Trangle {
+
+public class Triangle {
     public StringBuffer oneStar(){
         return new StringBuffer("*");
     }

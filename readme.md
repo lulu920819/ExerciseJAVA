@@ -38,33 +38,39 @@ Example when n=3:
 
 
 ## Diamond Exercises
-Isosceles Triangle
+
+### Isosceles Triangle
 
 Given a number n, print a centered triangle. Example for n=3:
+```
   *
  ***
 *****
-Diamond
+
+```
+### Diamond
 
 Given a number n, print a centered diamond. Example for n=3:
-
+```
   *
  ***
 *****
  ***
   *
+```
 
-Diamond with Name
+### Diamond with Name
 
 Given a number n, print a centered diamond with your name in place of the middle line. Example for n=3:
-
+```
   *
  ***
 Bill
  ***
   *
+```
 
-FizzBuzz Exercise
+## FizzBuzz Exercise
 FizzBuzz is a simple number game where you count, but say "Fizz" and/or "Buzz" instead of numbers adhering to certain rules.
 
 Create a FizzBuzz() method that prints out the numbers 1 through 100.
