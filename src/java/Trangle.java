@@ -4,30 +4,30 @@
  *  Date: ${Date}
  ****/
 public class Trangle {
-    public String oneStar(){
-        return "*";
+    public StringBuffer oneStar(){
+        return new StringBuffer("*");
     }
 
-    public String horizontalLine(int num){
-        String stars = "";
+    public StringBuffer horizontalLine(int num){
+        StringBuffer stars = new StringBuffer() ;
         for (int i = 0; i< num; i++)
-            stars +=oneStar();
+            stars.append(oneStar());
 
         return stars;
 
     }
 
-    public String verticalLine(int num){
-        String stars = "";
+    public StringBuffer verticalLine(int num){
+        StringBuffer stars = new StringBuffer() ;
         for (int i = 0; i < num; i++)
-            stars+=(oneStar()+"\n");
+            stars.append(oneStar()+"\n");
         return stars;
     }
 
-    public String rightTrangle(int num){
-        String stars = "" ;
+    public StringBuffer rightTrangle(int num){
+        StringBuffer stars = new StringBuffer() ;
         for (int i =1 ;i<=num;i++)
-            stars +=(horizontalLine(i) + "\n");
+            stars.append(horizontalLine(i) + "\n");
         return stars;
 
     }
