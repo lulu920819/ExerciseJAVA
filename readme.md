@@ -70,14 +70,15 @@ Bill
   *
 ```
 
-## FizzBuzz Exercise
-FizzBuzz is a simple number game where you count, but say "Fizz" and/or "Buzz" instead of numbers adhering to certain rules.
+## NumbersProg Exercise
+NumbersProg is a simple number game where you count, but say "Fizz" and/or "Buzz" instead of numbers adhering to certain rules.
 
-Create a FizzBuzz() method that prints out the numbers 1 through 100.
+Create a NumbersProg() method that prints out the numbers 1 through 100.
 Instead of numbers divisible by three print "Fizz".
 Instead of numbers divisible by five print "Buzz".
-Instead of numbers divisible by three and five print "FizzBuzz".
+Instead of numbers divisible by three and five print "NumbersProg".
 
+```
 Sample Output:
 1
 2
@@ -93,9 +94,10 @@ Buzz
 Fizz
 13
 14
-FizzBuzz
+NumbersProg
+```
 
-Prime Factors Exercise
+## Prime Factors Exercise
 Write a method generate(int n) that given an integer N will return a list of integers such that the numbers are the factors of N and are arranged in increasing numerical order.
 
 For example, generate(1) should return an empty list and generate(30) should return the numbers: 2,3,5.
