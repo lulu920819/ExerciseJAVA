@@ -5,7 +5,6 @@ public class Diamond {
         StringBuffer line = new StringBuffer();
         for (int i = 0;i<space*2-1;i++)
             line.append(" ");
-
         return line;
     }
 
@@ -14,7 +13,6 @@ public class Diamond {
         int mid = (line.length()-1)/2;
         int start = mid -lineNo;
         int end = mid + lineNo ;
-
         for (int i = start;i <= end;i++)
             tmp.replace(i,i+1, "*");
         return tmp;
@@ -28,7 +26,6 @@ public class Diamond {
             diamond.append("\n");
         }
         return diamond;
-
     }
 
     public  StringBuffer drawDiamond(int num, boolean drawName){
